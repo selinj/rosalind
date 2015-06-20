@@ -7,10 +7,7 @@ My profile: http://rosalind.info/users/selinjessa/
 ##Completed
 
 ###Bioinformatics Stronghold
-001 Counting DNA Nucleotides (6/19)
-
-002 Transcribing DNA into RNA (6/19)
-
-003 Complementing a Strand of DNA (6/19)
-
-006 Counting Point Mutations (6/20)
+1. Counting DNA Nucleotides (6/19)
+2. Transcribing DNA into RNA (6/19)
+3. Complementing a Strand of DNA (6/19)
+4. Counting Point Mutations (6/20)
