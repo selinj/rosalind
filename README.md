@@ -4,7 +4,7 @@ Compiling my solutions to the problems on rosalind, the bioinformatics learning 
 
 My profile: http://rosalind.info/users/selinjessa/
 
-###Completed
+##Completed
 
-####Bioinformatics Stronghold
-*Counting DNA Nucleotides
+###Bioinformatics Stronghold
+* Counting DNA Nucleotides
