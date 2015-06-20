@@ -11,3 +11,4 @@ My profile: http://rosalind.info/users/selinjessa/
 2. Transcribing DNA into RNA (6/19)
 3. Complementing a Strand of DNA (6/19)
 4. Counting Point Mutations (6/20)
+5. Finding a Motif in DNA (6/20)
