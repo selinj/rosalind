@@ -10,7 +10,6 @@ baby = 1
 adult = 0
 
 for i in range(1,n+1):
-    #print i
     if i ==1:
          adult = 0
          baby =1
