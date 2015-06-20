@@ -1,4 +1,4 @@
-﻿'''
+'''
 
 Problem: Translating RNA into Protein
 ID: PROT
@@ -40,7 +40,7 @@ f1 = open('rosalind_prot.txt','r')
 f2 = open('07_PROToutput.txt','w')
 
 s = f1.readline()
-ß
+
 print len(s)
 
 length = 0
