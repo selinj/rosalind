@@ -1,6 +1,6 @@
 # rosalind
 
-Compiling my solutions to the problems on rosalind, the bioinformatics learning platform - https://rosalind.info
+Compiling my solutions as I work through the problems on rosalind, the bioinformatics learning platform - https://rosalind.info
 
 My profile: http://rosalind.info/users/selinjessa/
 
