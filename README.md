@@ -10,3 +10,4 @@ My profile: http://rosalind.info/users/selinjessa/
 1. Counting DNA Nucleotides (6/19)
 2. Transcribing DNA into RNA (6/19)
 3. Complementing a Strand of DNA (6/19)
+6. Counting Point Mutations (6/20)
