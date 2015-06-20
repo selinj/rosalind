@@ -8,3 +8,4 @@ My profile: http://rosalind.info/users/selinjessa/
 
 ###Bioinformatics Stronghold
 * Counting DNA Nucleotides
+* Transcribing DNA into RNA
