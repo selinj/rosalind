@@ -12,3 +12,5 @@ My profile: http://rosalind.info/users/selinjessa/
 3. Complementing a Strand of DNA (6/19)
 4. Counting Point Mutations (6/20)
 5. Finding a Motif in DNA (6/20)
+6. Translating RNA into Protein (6/20)
+7. Rabbits and Recurrence Relations (6/20)
