@@ -1,12 +1,12 @@
 # rosalind
 
-Compiling my solutions as I work through the problems on rosalind, the bioinformatics learning platform - https://rosalind.info
+Compiling my solutions as I work through the problems on rosalind, the bioinformatics learning platform, over Summer 2015 - https://rosalind.info
 
 My profile: http://rosalind.info/users/selinjessa/
 
 ##Completed
 
 ###Bioinformatics Stronghold
-* Counting DNA Nucleotides
-* Transcribing DNA into RNA
-* Complementing a Strand of DNA
+* Counting DNA Nucleotides (6/19)
+* Transcribing DNA into RNA (6/19)
+* Complementing a Strand of DNA (6/19)
