@@ -1,6 +1,6 @@
 ﻿'''
 
-we organize genetic strings lexographically
+we organize genetic strings lexicographically
 
 
 given a collection of <= 10 symbols defining an ordered alphabet, and int n
