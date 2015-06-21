@@ -29,17 +29,11 @@ pyrimidines = ['C','T']
 
 for i in range(len(s1)):
     if s1[i] != s2[i]:
-        if s1[i] in purines:
-            if s2[i] in purines:
-                transitions += 1
-            else:
-                transversions +=1
-        elif s1[i] in pyrimidines:
-            if s2[i] in pyrimidines:
-                transitions += 1
-            else:
-                transversions +=1
-        
+        if s1[i] in purines and s2[i] in purines or s1[i] in pyrimidines and s2[i] in pyrimidines:
+            transitions +=1
+        else:
+            transversions +=1
+       
 R=transitions/transversions
 
 with open('11_TRANout.txt','w') as f:
