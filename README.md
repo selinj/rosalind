@@ -1,8 +1,10 @@
 # rosalind
 
-Compiling my solutions as I work through the problems on rosalind, the bioinformatics learning platform, and learn Python in the process over Summer 2015 - https://rosalind.info
+Compiling my solutions as I work through the problems on Rosalind, the bioinformatics learning platform, and learn Python in the process over Summer 2015 - https://rosalind.info
 
 My profile: http://rosalind.info/users/selinjessa/
+
+*Note* on numbering: Rosalind's problems are organized and linked in a tree structure - I haven't necessarily completed the problems in numeric order.
 
 ##Completed
 
