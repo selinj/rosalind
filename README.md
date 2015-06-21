@@ -14,3 +14,4 @@ My profile: http://rosalind.info/users/selinjessa/
 5. Finding a Motif in DNA (6/20)
 6. Translating RNA into Protein (6/20)
 7. Rabbits and Recurrence Relations (6/20)
+8. Calculating Protein Mass (6/20)
