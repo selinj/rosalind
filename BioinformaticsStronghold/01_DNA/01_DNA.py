@@ -27,3 +27,5 @@ f2.write(str(A) + " " + str(C) + " " + str(G) + " " + str(T))
 f2.close()
         
 
+
+#test

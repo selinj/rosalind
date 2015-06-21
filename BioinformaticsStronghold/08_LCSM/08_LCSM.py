@@ -7,11 +7,13 @@ return longest common substring - multiple, if that's the case
 
 '''
 
-f1 = open('rosalind_lcsm.txt','r')
-f2 = open('08_LCSMout.txt','w')
+#SeqRecord object in Biopython holds sequence w/ identifiers
 
-test = f1.readline()
-seq1 = f1.readline()
+from Bio import SeqIO
 
-print seq1
+handle = open('rosalind_lcsm.txt','rU')
+records = list(SeqIO.parse(handle, 'fasta'))
+handle.close()
 
+print records[0].id
+print records[0].seq
