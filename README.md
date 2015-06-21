@@ -17,3 +17,4 @@ My profile: http://rosalind.info/users/selinjessa/
 6. Translating RNA into Protein (6/20)
 7. Rabbits and Recurrence Relations (6/20)
 8. Calculating Protein Mass (6/20)
+9. RNA Splicing (6/21)
