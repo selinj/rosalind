@@ -21,3 +21,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * Transitions and Transversions (6/21)
 * Computing GC Content (6/21)
 * Enumerating Gene Orders (6/21)
+* Enumerating k-mers Lexicographically (6/21)
