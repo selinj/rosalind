@@ -1,4 +1,3 @@
-
 f1 = open('rosalind_fib.txt','r')
 f2 = open('07_FIBoutput.txt', 'w')
 
@@ -24,4 +23,3 @@ print str(rabbits)
 
 f2.write(str(rabbits))
 f2.close()
-
