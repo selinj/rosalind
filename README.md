@@ -22,3 +22,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * Computing GC Content (6/21)
 * Enumerating Gene Orders (6/21)
 * Enumerating k-mers Lexicographically (6/21)
+* Mortal Fibonacci Rabbits (6/22)
