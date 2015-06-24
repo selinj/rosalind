@@ -24,3 +24,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * Enumerating k-mers Lexicographically (6/21)
 * Mortal Fibonacci Rabbits (6/22)
 * Mendel's First Law (6/23)
+* Calculating Expected Offspring (6/24)
