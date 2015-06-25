@@ -25,3 +25,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * Mortal Fibonacci Rabbits (6/22)
 * Mendel's First Law (6/23)
 * Calculating Expected Offspring (6/24)
+* Finding a Spliced Motif (6/24)
