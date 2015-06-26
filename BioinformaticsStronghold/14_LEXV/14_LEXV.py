@@ -15,11 +15,7 @@ alphraw = str(given.readline().rstrip())
 alphabet = alphraw.split(' ')
 n = int(given.readline())
 
-alphabet = ['D','N','A']
-#n=3
-
 perms = []
-count = 0
 alphstring = ''
 
 for letter in alphabet:
@@ -31,17 +27,8 @@ for i in range(n+1):
     #print i
     for p in itertools.product(alphabet,repeat=i):
         perms.append(p)
-        count +=1
 
-#print perms
-#print count
-
-#perms = [('D','A'),('A','A','A'),('N'),('D','D','D'),('N','A','D'),('N','D','A')]
-
-#print perms
-
-#a function to compare two variables by letter
-    
+#a function to compare two variables by letter then length    
 def compare(p1,p2,orderedsymbols):
     result = 0
     length = 0
@@ -68,27 +55,36 @@ def compare(p1,p2,orderedsymbols):
                 result = 1 #not sorted if second shorter than first
         return result           
 
-def bubblesort(listtosort):
-    for i in range(1,len(listtosort)):
-        for j in range(i+1,len(listtosort)):
-            #print perms[i]
+#a sorting function which makes use of the compare function, and swaps
+#if two permutations are found to be unsorted
+def combsort(listtosort):
+    gap = len(listtosort)
+    shrink = 1.3
+    swapped = True
+    counter = 0
+
+    while swapped or gap != 1:
+        gap = gap/shrink
+        if gap <1:
+            gap = 1
+        i = 0
+        swapped = False
+
+        #compare 2 elements, swap if not sorted
+        while (i+gap) < len(listtosort):
+            counter += 1
             if compare(listtosort[i],listtosort[i+1],alphstring) == 1:
-                #then swap
                 listtosort[i],listtosort[i+1]=listtosort[i+1],listtosort[i]
-    return listtosort
-
-for i in range(len(perms)):
-    bubblesort(perms)
-#print perms
+                swapped = True
+            i += 1
+    
+combsort(perms)
 perms.pop(0)
-
-printformat = ''
 
 out = open('14_LEXVout.txt','w')
 
 for p in perms:
-    print p
-    for i in range(1,len(p)):
-        printformat += '{}'
-    print printformat.format(*p)
+    out.write(''.join(p)+'\n')
 out.close()
+
+print "written"
