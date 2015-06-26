@@ -26,3 +26,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * Mendel's First Law (6/23)
 * Calculating Expected Offspring (6/24)
 * Finding a Spliced Motif (6/24)
+* Ordering Strings of Varying Lengths Lexicographically (6/26)
