@@ -27,3 +27,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * Calculating Expected Offspring (6/24)
 * Finding a Spliced Motif (6/24)
 * Ordering Strings of Varying Lengths Lexicographically (6/26)
+* Enumerating Oriented Gene Orderings (6/26)
