@@ -28,3 +28,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * Finding a Spliced Motif (6/24)
 * Ordering Strings of Varying Lengths Lexicographically (6/26)
 * Enumerating Oriented Gene Orderings (6/26)
+* k-Mer Composition (6/27)
