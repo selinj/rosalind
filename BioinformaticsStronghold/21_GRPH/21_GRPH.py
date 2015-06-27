@@ -27,27 +27,17 @@ import math
 import itertools
 from Bio import SeqIO
 
-#handle = open('rosalind_grph.txt','r')
-#given = SeqIO.parse(handle,'fasta')
-#handle.close()
-
-strings = ['AAATAAA','AAATTTT','TTTTCCC','AAATCCC','GGGTGGG']
+handle = open('rosalind_grph.txt','r')
+given = list(SeqIO.parse(handle,'fasta'))
+handle.close()
 k=3
 
 pairs = []
-for p in itertools.permutations(strings,2):
+for p in itertools.permutations(given,2):
     pairs.append(p)
 
-print pairs
-
-for p in pairs:
-    if p[0][len(p[0])-k:len(p[0])] == p[1][0:k]:
-        print "overlap: "+str(p[0])+", "+str(p[1])
-
-'''
-for every permutation of length 2:
-    if substring perm[0] at (len(perm[0]-k,len(perm[0]) == same for perm[1] at (0,k)
-                                 then return both ids
-                                 else check next
-'''
-    
+with open('21_GRPHout.txt','w') as out:       
+    for p in pairs:
+        if (p[0].seq)[len(p[0])-k:len(p[0])] == (p[1].seq)[0:k]:
+            out.write(str(p[0].id)+" "+str(p[1].id)+'\n')
+    out.close()
