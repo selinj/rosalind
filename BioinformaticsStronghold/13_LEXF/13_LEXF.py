@@ -1,4 +1,4 @@
-﻿'''
+'''
 
 we organize genetic strings lexicographically
 
@@ -16,8 +16,10 @@ alphabet = alphraw.split(' ')
 n = int(given.readline())
 perms = []
 
-for p in itertools.produßct(alphabet,repeat=n):
+for p in itertools.product(alphabet,repeat=n):
     perms.append(p)
+
+print perms
 
 #generalizing a format
 printformat = ''
