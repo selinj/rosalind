@@ -1,5 +1,3 @@
-
-
 from Bio import SeqIO
 
 handle = open('rosalind_lcsm.txt','rU')
@@ -21,19 +19,24 @@ def findsharedmotif(s1,s2):
                 i[x][y] = 0
     return s1[x_longest - longest: x_longest]
 
-print len(given)
+#print len(given)
 
-longest = ""
-foudn = ""
+found = ""
+
 for k in range(len(given)-1):
-    print k
-    #print str(k)+". checking "+str(given[k].id)
-    found = findsharedmotif(given[k].seq,given[k+1].seq)
-    if len(found) > len(longest):
-        longest = found
+    #print k
+    found = str(findsharedmotif(given[k].seq,given[k+1].seq))
+    for j in range(len(given)):
+        dna = str(given[j].seq)
+        if found not in dna:
+            break
+        else:
+            toBreak = True
+    if toBreak:
+        break
 
-print longest
+print found
 
 out = open('08_LCSM2out.txt','w')
-out.write(str(longest))
+out.write(str(found))
 out.close()
