@@ -30,3 +30,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * Enumerating Oriented Gene Orderings (6/26)
 * k-Mer Composition (6/27)
 * Overlaph Graphs (6/27)
+* Finding a Shared Motif (6/29)
