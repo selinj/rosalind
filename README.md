@@ -1,6 +1,6 @@
 # rosalind
 
-Compiling my solutions as I work through the problems on Rosalind, the bioinformatics learning platform, learning Python and Biopython in the process over Summer 2015 - https://rosalind.info
+Compiling my solutions as I work through the problems on Rosalind, the bioinformatics learning platform (- https://rosalind.info), and learn Python and Biopython.
 
 My profile: http://rosalind.info/users/selinjessa/
 
