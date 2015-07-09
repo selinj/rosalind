@@ -31,3 +31,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * k-Mer Composition (6/27)
 * Overlaph Graphs (6/27)
 * Finding a Shared Motif (6/29)
+* Finding a Protein Motif (7/8)
