@@ -1,4 +1,9 @@
 #proof of concept
+from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.Alphabet import generic_dna
+
+dna = Seq('TCAATGCATGCGGGTCTATATGCAT')
 print "                   0123456789012345678901234"
 print "                   1234567890123456789012345"
 print "dna seq         5' " + dna + " 3'"

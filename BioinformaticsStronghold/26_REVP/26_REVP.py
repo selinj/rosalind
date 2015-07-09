@@ -16,7 +16,6 @@ data = SeqIO.parse(handle,'fasta').next()
 handle.close()
 
 dna = data.seq
-#dna = Seq('TCAATGCATGCGGGTCTATATGCAT')
 rev_comp = dna.reverse_complement()
 revd = rev_comp[::-1]
 
@@ -29,13 +28,10 @@ length = len(str(dna))
 print length
 out = open('26_REVPout.txt','w')
 
-for n in range(4,12):
-    for i in range(length):
+for n in range(4,13):
+    for i in range(length-n+1):
         if check(i,n):
             if len(str(dna[i:i+n])) >= n:
-                #print dna[i:i+n]
-                #print revd[i:i+n]
                 print str(i+1) + ' ' + str(n) #print i + 1 because rosalind uses 1-based numbering
                 out.write(str(i+1) + ' ' + str(n)+'\n')
-
 out.close()
