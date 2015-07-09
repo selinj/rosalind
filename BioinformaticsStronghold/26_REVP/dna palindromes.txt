@@ -1,7 +1,8 @@
-	1 2 3 4 5 6 7 8 9 
-dna	t c a a t g c a t
-revc	a g t t a c g t a
-revd    a t g c a t t g a
+	1 2 3 4 5 6 7 8 9 0 1 2 3 4 5
+dna	t c a a t g c a t g c g g g t
+revc    a g t t a c g t a c g c c c a
+revd    a c c c g c a t g c a t t g a
+
 
         0 1 2 3 4 5 6 7 8
         D o n   Q u i j o 
@@ -10,5 +11,3 @@ start = 5
 n = 4
 dna[5:9] = t g c a
 revc[8:4:-1] = t g c a
-revd = revc[9:5:-1]
-#dna[5:9] = revd[::-1]
