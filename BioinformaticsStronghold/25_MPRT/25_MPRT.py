@@ -3,8 +3,7 @@
 uniprot id B5ZC00'''
 
 import urllib2
-
-#proteinseqs='MKNKFKTQEELVNHLKTVGFVFANSEIYNGLANAWDYGPLGVLLKNNLKNLWWKEFVTKQKDVVGLDSAIILNPLVWKASGHLDNFSDPLIDCKNCKARYRADKLIESFDENIHIAENSSNEEFAKVLNDYEISCPTCKQFNWTEIRHFNLMFKTYQGVIEDAKNVVYLRPETAQGIFVNFKNVQRSMRLHLPFGIAQIGKSFRNEITPGNFIFRTREFEQMEIEFFLKEESAYDIFDKYLNQIENWLVSACGLSLNNLRKHEHPKEELSHYSKKTIDFEYNFLHGFSELYGIAYRTNYDLSVHMNLSKKDLTYFDEQTKEKYVPHVIEPSVGVERLLYAILTEATFIEKLENDDERILMDLKYDLAPYKIAVMPLVNKLKDKAEEIYGKILDLNISATFDNSGSIGKRYRRQDAIGTIYCLTIDFDSLDDQQDPSFTIRERNSMAQKRIKLSELPLYLNQKAHEDFQRQCQK',
+from Bio import SeqIO
 
 f1 = open('rosalind_mprt.txt','r')
 
@@ -19,28 +18,20 @@ def getUniprotFile(protID):
     output = urllib2.urlopen(("http://www.uniprot.org/uniprot/%s.fasta" % protID))
     return output
 
-#print getUniprotFile('P10493')
-
 protDict = {}
 for protID in protList:
-    output = getUniprotFile(protID)
-    output.readline()
-    seq = output.readline()
-    protDict.update({protID:seq})
-        
-#prompt user w/ id, get seq input to make a dictionary with the UniProt id's + seqs
-##protDict = {}
-##for prot in protList:
-##    print prot
-##    seq = raw_input()
-##    seq = seq.replace(' ','')
-##    protDict.update({prot:seq})
+    try:
+        output = getUniprotFile(protID)
+        protrecord = list(SeqIO.parse(output,'fasta'))
+        seq = (protrecord[0]).seq
+        protDict.update({protID:seq})
+    except:
+        print "This didn't work."
 
 print "The Dictionary of IDs/UniProt sequences:"
 print protDict
 
 #N-glycosylation motif: N{P}[ST]{P}
-
 listofindexes = []
 index = 0
 
@@ -50,7 +41,6 @@ def find_indexes(protID,seq):
     del listofindexes[:]
     for i in range(len(seq)-5):
         if seq[i] == 'N':
-            #go on
             index = i
             if seq[i+1] != 'P':
                 if seq[i+2] == 'S' or seq[i+2] == 'T':
@@ -64,9 +54,11 @@ out = open('25_MPRTout.txt','w')
     
 for uniprotid,seq in protDict.items():
     s_list = find_indexes(uniprotid,seq)
+    if not s_list:
+        continue
     out.write(uniprotid+'\n')
     for i in s_list:
-        out.write(str(i))
+        out.write(str(i)+' ')
     out.write('\n')
 
 out.close()
