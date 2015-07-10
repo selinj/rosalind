@@ -33,3 +33,5 @@ My profile: http://rosalind.info/users/selinjessa/
 * Finding a Shared Motif (6/29)
 * Finding a Protein Motif (7/8)
 * Locating Restriction Sites (7/9)
+* Open Reading Frames (7/9)
+* Inferring mRNA from Protein (7/9)
