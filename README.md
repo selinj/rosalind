@@ -35,3 +35,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * Locating Restriction Sites (7/9)
 * Open Reading Frames (7/9)
 * Inferring mRNA from Protein (7/9)
+* Partial Permutations (7/10)
