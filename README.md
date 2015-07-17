@@ -1,6 +1,6 @@
 # rosalind
 
-Compiling my solutions as I work through the problems on Rosalind, the bioinformatics learning platform (rosalind.info), and learn Python and Biopython.
+Compiling my solutions as I work through the problems on Rosalind, the bioinformatics learning platform (rosalind.info), and learn Python. For solving many of these problems I'm using Biopython and scikit.
 
 My profile: http://rosalind.info/users/selinjessa/
 
