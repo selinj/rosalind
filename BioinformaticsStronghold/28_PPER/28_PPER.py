@@ -35,7 +35,7 @@ n,k = f1.readline().split()
 n,k=int(n),int(k)
 
 #count = 0
-#this works, but is too slow for Rosalind's 5-min answer windo
+#this works, but is too slow for Rosalind's 5-min answer window
 #nset = [i for i in range(1,n+1)]
 #perms = sum(((count+1)) for p in itertools.permutations(nset,k)) % 1000000
 
