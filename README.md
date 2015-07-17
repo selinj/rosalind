@@ -36,3 +36,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * Open Reading Frames (7/9)
 * Inferring mRNA from Protein (7/9)
 * Partial Permutations (7/10)
+* Consensus and Profile (7/17)
