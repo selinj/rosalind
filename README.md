@@ -37,3 +37,4 @@ My profile: http://rosalind.info/users/selinjessa/
 * Inferring mRNA from Protein (7/9)
 * Partial Permutations (7/10)
 * Consensus and Profile (7/17)
+* Introduction to Random Strings (9/11)
